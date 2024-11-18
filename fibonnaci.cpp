@@ -23,7 +23,7 @@ int main()
     cout << "--------------START--------------" << endl;
     for (int i = 0; i <= endPoint; i++)
     {
-        cout << currentNum << endl;
+        cout<< i << ". " << currentNum << endl;
 
         temp = currentNum;
         currentNum = nextNum;
