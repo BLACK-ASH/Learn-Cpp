@@ -12,7 +12,7 @@ int main()
 
     while (num < 0)
     {
-        cout << "Factorial Not Posible For Given Number " << endl;
+        cout << "Factorial Not Possible For Given Number " << endl;
         cout << "Enter A Valid Number : ";
         cin >> num;
     };
