@@ -44,6 +44,25 @@ public:
         toLowercase();
         Value[0] = Value[0] - 'a' + 'A';
     }
+
+    // To Swap Case
+    void toSwapcase()
+    {
+        for (int i = 0; i < Value.length(); i++)
+        {
+            if (Value[i] <= 'z' && Value[i] >= 'a')
+            {
+                Value[i] = Value[i] - 'a' + 'A';
+            }
+            else if (Value[i] <= 'Z' && Value[i] >= 'A')
+            {
+                Value[i] = Value[i] - 'A' + 'a';
+            }
+            else{
+                continue;
+            }
+        }
+    }
 };
 
 int main()
@@ -58,6 +77,9 @@ int main()
     cout << name.Value << endl;
 
     name.toTitlecase();
+    cout << name.Value << endl;
+
+    name.toSwapcase();
     cout << name.Value << endl;
 
     return 0;
